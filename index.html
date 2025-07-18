@@ -1,0 +1,902 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>SB Admin 2 - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet" />
+
+    <style type="text/css">
+      /* Chart.js */
+      @keyframes chartjs-render-animation {
+        from {
+          opacity: 0.99;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .chartjs-render-monitor {
+        animation: chartjs-render-animation 1ms;
+      }
+      .chartjs-size-monitor,
+      .chartjs-size-monitor-expand,
+      .chartjs-size-monitor-shrink {
+        position: absolute;
+        direction: ltr;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        pointer-events: none;
+        visibility: hidden;
+        z-index: -1;
+      }
+      .chartjs-size-monitor-expand > div {
+        position: absolute;
+        width: 1000000px;
+        height: 1000000px;
+        left: 0;
+        top: 0;
+      }
+      .chartjs-size-monitor-shrink > div {
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+      }
+    </style>
+    <style type="text/css">
+      /* Chart.js */
+      @keyframes chartjs-render-animation {
+        from {
+          opacity: 0.99;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .chartjs-render-monitor {
+        animation: chartjs-render-animation 1ms;
+      }
+      .chartjs-size-monitor,
+      .chartjs-size-monitor-expand,
+      .chartjs-size-monitor-shrink {
+        position: absolute;
+        direction: ltr;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        pointer-events: none;
+        visibility: hidden;
+        z-index: -1;
+      }
+      .chartjs-size-monitor-expand > div {
+        position: absolute;
+        width: 1000000px;
+        height: 1000000px;
+        left: 0;
+        top: 0;
+      }
+      .chartjs-size-monitor-shrink > div {
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+      }
+    </style>
+    <style type="text/css">
+      /* Chart.js */
+      @keyframes chartjs-render-animation {
+        from {
+          opacity: 0.99;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .chartjs-render-monitor {
+        animation: chartjs-render-animation 1ms;
+      }
+      .chartjs-size-monitor,
+      .chartjs-size-monitor-expand,
+      .chartjs-size-monitor-shrink {
+        position: absolute;
+        direction: ltr;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        pointer-events: none;
+        visibility: hidden;
+        z-index: -1;
+      }
+      .chartjs-size-monitor-expand > div {
+        position: absolute;
+        width: 1000000px;
+        height: 1000000px;
+        left: 0;
+        top: 0;
+      }
+      .chartjs-size-monitor-shrink > div {
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+      }
+    </style>
+    <style type="text/css">
+      /* Chart.js */
+      @keyframes chartjs-render-animation {
+        from {
+          opacity: 0.99;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .chartjs-render-monitor {
+        animation: chartjs-render-animation 1ms;
+      }
+      .chartjs-size-monitor,
+      .chartjs-size-monitor-expand,
+      .chartjs-size-monitor-shrink {
+        position: absolute;
+        direction: ltr;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        pointer-events: none;
+        visibility: hidden;
+        z-index: -1;
+      }
+      .chartjs-size-monitor-expand > div {
+        position: absolute;
+        width: 1000000px;
+        height: 1000000px;
+        left: 0;
+        top: 0;
+      }
+      .chartjs-size-monitor-shrink > div {
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+      }
+    </style>
+    <style type="text/css">
+      /* Chart.js */
+      @keyframes chartjs-render-animation {
+        from {
+          opacity: 0.99;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .chartjs-render-monitor {
+        animation: chartjs-render-animation 1ms;
+      }
+      .chartjs-size-monitor,
+      .chartjs-size-monitor-expand,
+      .chartjs-size-monitor-shrink {
+        position: absolute;
+        direction: ltr;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        pointer-events: none;
+        visibility: hidden;
+        z-index: -1;
+      }
+      .chartjs-size-monitor-expand > div {
+        position: absolute;
+        width: 1000000px;
+        height: 1000000px;
+        left: 0;
+        top: 0;
+      }
+      .chartjs-size-monitor-shrink > div {
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+      }
+    </style>
+    <style type="text/css">
+      /* Chart.js */
+      @keyframes chartjs-render-animation {
+        from {
+          opacity: 0.99;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .chartjs-render-monitor {
+        animation: chartjs-render-animation 1ms;
+      }
+      .chartjs-size-monitor,
+      .chartjs-size-monitor-expand,
+      .chartjs-size-monitor-shrink {
+        position: absolute;
+        direction: ltr;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        pointer-events: none;
+        visibility: hidden;
+        z-index: -1;
+      }
+      .chartjs-size-monitor-expand > div {
+        position: absolute;
+        width: 1000000px;
+        height: 1000000px;
+        left: 0;
+        top: 0;
+      }
+      .chartjs-size-monitor-shrink > div {
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+      }
+    </style>
+    <style type="text/css">
+      /* Chart.js */
+      @keyframes chartjs-render-animation {
+        from {
+          opacity: 0.99;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .chartjs-render-monitor {
+        animation: chartjs-render-animation 1ms;
+      }
+      .chartjs-size-monitor,
+      .chartjs-size-monitor-expand,
+      .chartjs-size-monitor-shrink {
+        position: absolute;
+        direction: ltr;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        pointer-events: none;
+        visibility: hidden;
+        z-index: -1;
+      }
+      .chartjs-size-monitor-expand > div {
+        position: absolute;
+        width: 1000000px;
+        height: 1000000px;
+        left: 0;
+        top: 0;
+      }
+      .chartjs-size-monitor-shrink > div {
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+      }
+    </style>
+    <style type="text/css">
+      /* Chart.js */
+      @keyframes chartjs-render-animation {
+        from {
+          opacity: 0.99;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .chartjs-render-monitor {
+        animation: chartjs-render-animation 1ms;
+      }
+      .chartjs-size-monitor,
+      .chartjs-size-monitor-expand,
+      .chartjs-size-monitor-shrink {
+        position: absolute;
+        direction: ltr;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        pointer-events: none;
+        visibility: hidden;
+        z-index: -1;
+      }
+      .chartjs-size-monitor-expand > div {
+        position: absolute;
+        width: 1000000px;
+        height: 1000000px;
+        left: 0;
+        top: 0;
+      }
+      .chartjs-size-monitor-shrink > div {
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+      }
+    </style>
+  </head>
+
+  <script>
+    async function updateData() {
+      try {
+        const response = await fetch("data_last.json"); // Ganti jika perlu
+        const data = await response.json();
+
+        // Tampilkan data
+        const now = new Date();
+        const jam = now.toLocaleTimeString('id-ID', { hour12: false });
+        document.getElementById("jam").textContent = jam;
+
+        document.getElementById("status-banjir").textContent = data.banjir;
+        document.getElementById("ketinggian").textContent =
+          data.ketinggian + " cm";
+        document.getElementById("baterai").textContent = data.baterai + "%";
+
+        const bar = document.getElementById("baterai-bar");
+        bar.style.width = data.baterai + "%";
+        bar.setAttribute("aria-valuenow", data.baterai);
+
+        // === Ubah warna kartu status banjir ===
+        const cardStatus = document.getElementById("status-card");
+
+        // Reset semua kelas warna dulu
+        cardStatus.classList.remove(
+          "bg-gradient-danger",
+          "bg-gradient-warning",
+          "bg-gradient-info",
+          "bg-gradient-success"
+        );
+
+        // Tambahkan sesuai status
+        switch (data.banjir) {
+          case "Bahaya":
+            cardStatus.classList.add("bg-gradient-danger");
+            break;
+          case "Siaga":
+            cardStatus.classList.add("bg-gradient-warning");
+            break;
+          case "Waspada":
+            cardStatus.classList.add("bg-gradient-info");
+            break;
+          case "Normal":
+            cardStatus.classList.add("bg-gradient-success");
+            break;
+        }
+      } catch (err) {
+        console.error("Gagal mengambil data:", err);
+      }
+    }
+
+    setInterval(updateData, 1000); // Update tiap 2 detik
+    updateData(); // Update pertama kali
+  </script>
+
+  <script>
+  function updateChart() {
+    fetch('histori_15m.txt')
+      .then(response => response.text())
+      .then(text => {
+        let lines = text.trim().split('\n').filter(line => line.includes('=>'));
+        lines = lines.slice(-12);
+        const isMobile = window.innerWidth <= 768;
+        lines = isMobile ? lines.slice(-8) : lines.slice(-12);
+
+        const labels = [];
+        const values = [];
+
+        lines.forEach(line => {
+          const [timestamp, jsonStr] = line.split(' => ');
+          try {
+            const data = JSON.parse(jsonStr);
+            const timeLabel = new Date(timestamp).toLocaleTimeString('id-ID', {
+              hour: '2-digit',
+              minute: '2-digit',
+            });
+            labels.push(timeLabel);
+            values.push(data.ketinggian);
+          } catch (e) {
+            console.warn('Format JSON tidak valid:', jsonStr);
+          }
+        });
+
+        // Perbarui chart jika sudah ada
+        if (window.myChart) {
+          window.myChart.data.labels = labels;
+          window.myChart.data.datasets[0].data = values;
+          window.myChart.update();
+        } else {
+          const ctx = document.getElementById("myAreaChart");
+          window.myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+              labels: labels,
+              datasets: [{
+                label: "Ketinggian Air",
+                lineTension: 0.3,
+                backgroundColor: "rgba(78, 115, 223, 0.05)",
+                borderColor: "rgba(78, 115, 223, 1)",
+                pointRadius: 3,
+                pointBackgroundColor: "rgba(78, 115, 223, 1)",
+                pointBorderColor: "rgba(78, 115, 223, 1)",
+                pointHoverRadius: 3,
+                pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
+                pointHoverBorderColor: "rgba(78, 115, 223, 1)",
+                pointHitRadius: 10,
+                pointBorderWidth: 2,
+                data: values,
+              }],
+            },
+            options: {
+              maintainAspectRatio: false,
+              layout: {
+                padding: {
+                  left: 10,
+                  right: 25,
+                  top: 25,
+                  bottom: 0
+                }
+              },
+              scales: {
+                xAxes: [{
+                  gridLines: { display: false, drawBorder: false },
+                  ticks: { maxTicksLimit: 12 }
+                }],
+                yAxes: [{
+                  ticks: {
+                    callback: function(value) {
+                      return number_format(value) + ' cm';
+                    },
+                    maxTicksLimit: 5,
+                    padding: 10
+                  },
+                  gridLines: {
+                    color: "rgb(234, 236, 244)",
+                    zeroLineColor: "rgb(234, 236, 244)",
+                    drawBorder: false,
+                    borderDash: [2],
+                    zeroLineBorderDash: [2]
+                  }
+                }]
+              },
+              legend: { display: false },
+              tooltips: {
+                backgroundColor: "rgb(255,255,255)",
+                bodyFontColor: "#858796",
+                titleMarginBottom: 10,
+                titleFontColor: '#6e707e',
+                titleFontSize: 14,
+                borderColor: '#dddfeb',
+                borderWidth: 1,
+                xPadding: 15,
+                yPadding: 15,
+                displayColors: false,
+                intersect: false,
+                mode: 'index',
+                caretPadding: 10,
+                callbacks: {
+                  label: function(tooltipItem, chart) {
+                    return chart.datasets[tooltipItem.datasetIndex].label + ': ' +
+                           number_format(tooltipItem.yLabel) + ' cm';
+                  }
+                }
+              }
+            }
+          });
+        }
+      })
+      .catch(err => console.error("Gagal membaca histori:", err));
+  }
+
+  // Panggil pertama kali
+  updateChart();
+
+
+  // Update otomatis tiap 30 detik
+  setInterval(updateChart, 30000);
+  </script>
+
+
+
+  <body id="page-top" class="sidebar-toggled">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <!-- Page Heading -->
+            <div
+              class="d-sm-flex align-items-center justify-content-between mb-4 mt-4"
+            >
+              <h1 class="h3 mb-0 text-gray-800">
+                Sistem Monitoring Banjir Desa Pulau Panjang Hilir
+              </h1>
+            </div>
+
+            <!-- Content Row -->
+            <div class="row">
+              <!-- Earnings (Monthly) Card Example -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-primary text-uppercase mb-1"
+                        >
+                          Jam
+                        </div>
+                        <div
+                          class="h5 mb-0 font-weight-bold text-gray-800"
+                          id="jam"
+                        >
+                          --:--
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-clock fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Earnings (Monthly) Card Example -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div id="status-card" class="card bg-gradient-secondary shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-success text-uppercase mb-1 text-gray-100"
+                        >
+                          Status Banjir
+                        </div>
+                        <div
+                          class="h5 mb-0 font-weight-bold text-gray-100"
+                          id="status-banjir"
+                        >
+                          Loading...
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i
+                          class="fas fa-exclamation-circle fa-2x text-gray-100"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pending Requests Card Example -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-warning shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-warning text-uppercase mb-1"
+                        >
+                          Ketinggian Air Saat Ini
+                        </div>
+                        <div
+                          class="h5 mb-0 font-weight-bold text-gray-800"
+                          id="ketinggian"
+                        >
+                          -- cm
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-tint fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Earnings (Monthly) Card Example -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-info shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-info text-uppercase mb-1"
+                        >
+                          Persentase Baterai
+                        </div>
+                        <div class="row no-gutters align-items-center">
+                          <div class="col-auto">
+                            <div
+                              class="h5 mb-0 mr-3 font-weight-bold text-gray-800"
+                              id="baterai"
+                            >
+                              --%
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="progress progress-sm mr-2">
+                              <div
+                                class="progress-bar bg-info"
+                                id="baterai-bar"
+                                role="progressbar"
+                                style="width: 0%"
+                                aria-valuenow="0"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-battery-full fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content Row -->
+
+            <div class="row">
+              <!-- Area Chart -->
+              <div class="col-xl-12 col-lg-12">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                  >
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Histori Ketinggian Air
+                    </h6>
+                    <div class="dropdown no-arrow">
+                      <a
+                        class="dropdown-toggle"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <i
+                          class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"
+                        ></i>
+                      </a>
+                      <div
+                        class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <div class="dropdown-header">Dropdown Header:</div>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-monitor-expand">
+                          <div class=""></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink">
+                          <div class=""></div>
+                        </div>
+                      </div>
+                      <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-monitor-expand">
+                          <div class=""></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink">
+                          <div class=""></div>
+                        </div>
+                      </div>
+                      <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-monitor-expand">
+                          <div class=""></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink">
+                          <div class=""></div>
+                        </div>
+                      </div>
+                      <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-monitor-expand">
+                          <div class=""></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink">
+                          <div class=""></div>
+                        </div>
+                      </div>
+                      <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-monitor-expand">
+                          <div class=""></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink">
+                          <div class=""></div>
+                        </div>
+                      </div>
+                      <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-monitor-expand">
+                          <div class=""></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink">
+                          <div class=""></div>
+                        </div>
+                      </div>
+                      <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-monitor-expand">
+                          <div class=""></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink">
+                          <div class=""></div>
+                        </div>
+                      </div>
+                      <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-monitor-expand">
+                          <div class=""></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink">
+                          <div class=""></div>
+                        </div>
+                      </div>
+                      <canvas
+                        id="myAreaChart"
+                        width="845"
+                        height="420"
+                        style="display: block; height: 160px; width: 322px"
+                        class="chartjs-render-monitor"
+                      ></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pie Chart -->
+            </div>
+
+            <!-- Content Row -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright © Your Website 2021</span>
+            </div>
+          </div>
+        </footer>
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top" style="display: none">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+  </body>
+</html>
